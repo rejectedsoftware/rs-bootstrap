@@ -1,0 +1,5 @@
+name "bootstrap"
+description "Provides a default style for rejectedsoftware web sites"
+dependency "vibe-d" version="~>0.7.25"
+targetType "sourceLibrary"
+copyFiles "public"

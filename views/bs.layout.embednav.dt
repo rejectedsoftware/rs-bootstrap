@@ -1,0 +1,13 @@
+extends bs.layout
+
+block body
+	.bs-hl
+	.bs-hr
+	header>
+		block bs.header
+	#bs-main.bs-embednav
+		block bs.content
+	footer
+		block bs.footer
+	.bs-fl
+	.bs-fr

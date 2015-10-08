@@ -1,0 +1,127 @@
+extends example.layout.plain
+
+block title
+	title Welcome to the example page
+
+block bs.content
+	.bs-columns3
+		.bs-col
+			h2 Productive
+			p High-level declarative REST and web application framework
+			p Full HTTP(S) stack with client, server and proxy implementations
+			p Shipped with native database drivers for MongoDB and Redis
+			p Complete concurrency toolkit and support for low level I/O operations
+			a(href="#") Read more&hellip;
+
+		.bs-col
+			h2 Fast
+			p Asynchronous I/O for maximum speed and minimum memory usage
+			p Compile-time "Diet" templates for unparalleled dynamic page speed
+			p Compiled to native machine code
+			p Multi-threading and integrated load-balancing*
+			a(href="#") Read more&hellip;
+		
+		.bs-col
+			h2 Simple
+			p Fiber based blocking programming model for concise and intuitive development
+			p Compact API with sensible default choices
+			p Full support for exception based error handling
+			p Simple access to third-party extension libraries using the DUB package system
+			a(href="#") Read more&hellip;
+
+	.bs-columns3.bs-separator
+		nav.bs-col
+			h2 Jump to&hellip;
+			ul.bs-global
+				li.ico-features
+					a(href="#") Features
+					p View a list of all features explaining how they work and what makes them special
+
+				li.ico-tutorials
+					a(href="/docs") Tutorials
+					p Development documentation including the full API reference
+
+				li.ico-docs
+					a(href="/docs") Documentation
+					p Development documentation including the full API reference
+
+				li.ico-community
+					a(href="#") Community
+					p Places to get help, report bugs, and discuss vibe.d in general
+
+				li.ico-getinvolved
+					a(href="#") Get involved
+					p Support vibe.d through bug reports, code contributions or donations
+
+				li.ico-download
+					a(href="/download") Download
+					p Get the latest release and accompanying material
+
+				li.ico-news
+					a(href="#") News
+					p Follow the development of vibe.d and stay up to date with news and events
+
+				li.ico-about
+					a(href="#") About
+					p All about the project's motivation, goals and the creators
+
+		.bs-col
+			h2 Featured
+			h3 D Web Devleopment
+			large by Kai Nacke
+			// image goes here
+			p This book gives a thorough introduction to web development in D, using vibe.d. While walking through the various topics, it always provides practical step-by-step examples and explains the underlying mechanisms.
+			p Available as e-book and print versions.
+
+		.bs-col
+			h2 Latest news
+			.newsitem
+				.newsdate 2015-10-13
+				h3 Some news have happened!
+			.newsitem
+				.newsdate 2015-10-13
+				h3 Some news have happened!
+			.newsitem
+				.newsdate 2015-10-13
+				h3 Some news have happened!
+			.newsitem
+				.newsdate 2015-10-13
+				h3 Some news have happened!
+			.newsitem
+				.newsdate 2015-10-13
+				h3 Some news have happened!
+			.newsitem
+				.newsdate 2015-10-13
+				h3 Some news have happened!
+
+	section.bs-separator
+		h2 Example of a HTTP server
+		code
+			pre.
+				import vibe.d;
+
+				shared static this()
+				{
+					auto settings = new HTTPServerSettings;
+					settings.port = 8080;
+
+					listenHTTP(settings, &handleRequest);
+				}
+
+				void handleRequest(HTTPServerRequest req,
+				.                  HTTPServerResponse res)
+				{
+					if (req.path == "/")
+						res.writeBody("Hello, World!", "text/plain");
+				}
+
+	section
+		h2 Example of an echo server
+		code
+			pre.
+				import vibe.d;
+
+				shared static this()
+				{
+					listenTCP(7, (conn) { conn.write(conn); });
+				}

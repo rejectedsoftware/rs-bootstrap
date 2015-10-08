@@ -1,0 +1,9 @@
+extends example.layout
+
+block title
+	title Welcome to the example page
+
+block bs.content
+	h1 Main title
+
+	p This page is shorter than the nav area!

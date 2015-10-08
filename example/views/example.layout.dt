@@ -1,0 +1,36 @@
+extends bs.layout.leftnav
+
+block head
+	block title
+	link(rel="stylesheet", href="styles/example.css")
+
+block bs.header
+	| This is the header
+	a(href="#")
+		span.bs-hbtn.right.black get <strong>vibe.d</strong><br><large>0.7.26</large>
+		span.bs-hbtn.left.red>
+			.dub-logo
+
+block bs.nav
+	ul.bs-global
+		li.ico-home
+			a(href="/") Home
+		li.ico-docs
+			a(href="/docs") Documentation
+		li.ico-products
+			a(href="#") Products
+		li.ico-about
+			a(href="#") About
+		li.ico-download	
+			a(href="/download") Downloads
+
+	block example.nav
+
+block bs.footer
+	| Copyright © 2012-2014 rejectedsoftware e.K.
+	.bs-right
+		a(href="#") Impressum
+		| • 
+		a(href="#") License
+		| • 
+		a(href="#") Contact

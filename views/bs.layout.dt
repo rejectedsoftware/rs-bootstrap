@@ -1,0 +1,10 @@
+doctype html
+html
+	- string title; /* default variable to use for the current page title */
+	head
+		block head
+		link(rel="stylesheet", href="#{req.rootDir}styles/normalize.css")
+		link(rel="stylesheet", href="#{req.rootDir}styles/bootstrap.css")
+		script(src="#{req.rootDir}scripts/bootstrap.js")
+	body
+		block body
