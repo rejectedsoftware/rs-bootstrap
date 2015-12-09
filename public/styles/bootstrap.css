@@ -57,40 +57,7 @@ body > header, body > footer, #bs-main {
 
 .bs-right { float: right; }
 
-.bs-hr {
-	position: absolute;
-	left: 750pt;
-	right: 0;
-	height: 81pt;
-	background: linear-gradient(to bottom left, #fff, #9baac2);
-	background-position: 100% 0;
-	background-size: 51% 81pt;
-}
 
-.bs-hl {
-	position: absolute;
-	left: 0;
-	right: 750pt;
-	height: 81pt;
-	background: linear-gradient(to bottom right, #fff, #9baac2);
-	background-size: 51% 81pt;
-}
-
-#bs-main {
-	background:
-		linear-gradient(to bottom right, #f0f3f7, #fff 50%),
-		linear-gradient(to bottom left, #f0f3f7, #fff 50%),
-		linear-gradient(to top right, #f5f8fc, #fff 50%),
-		linear-gradient(to top left, #f5f8fc, #fff 50%);
-	background-size: 18pt 180pt, 18pt 180pt, 18pt 180pt, 18pt 180pt;
-	background-position: 0 0, 100% 0, 0 100%, 100% 100%;
-	background-repeat: no-repeat, no-repeat;
-}
-
-body > header {
-	height: 81pt;
-	background: linear-gradient(#b7d3df, #8294b2);
-}
 
 #bs-main.bs-leftnav > nav {
 	position: relative;
@@ -107,39 +74,8 @@ body > header {
 	margin-left: 162pt;
 }
 
-#bs-main > section > h1 {
+#bs-main > section > h1, #bs-main > section > h2 {
 	margin-top: 0;
-}
-
-body > footer {
-	box-sizing: border-box;
-	clear: left;
-	padding: 4.5pt 12pt;
-	width: 100%;
-	background: linear-gradient(#f0f0f0, #e8e8e8);
-}
-
-.bs-fr {
-	position: absolute;
-	margin-top: -24pt;
-	z-index: -1;
-	left: 750pt;
-	right: 0;
-	height: 24pt;
-	background: linear-gradient(to bottom left, #fff, #f0f0f0);
-	background-position: 100% 0;
-	background-size: 51% 24pt;
-}
-
-.bs-fl {
-	z-index: -1;
-	position: absolute;
-	margin-top: -24pt;
-	left: 0;
-	right: 750pt;
-	height: 24pt;
-	background: linear-gradient(to bottom right, #fff, #f0f0f0);
-	background-size: 51% 24pt;
 }
 
 
@@ -177,6 +113,10 @@ body > footer {
 
 #bs-main nav ul.bs-local li.active {
 	font-weight: bold;
+}
+
+header nav.bs-topnav ul.bs-global {
+	padding-left: 0;
 }
 
 
@@ -295,4 +235,73 @@ td input, td select, td textarea {
 textarea {
 	resize: vertical;
 	height: 150pt;
+}
+
+
+/* vibed.org color scheme */
+
+body.bs-blue .bs-hr {
+	position: absolute;
+	left: 750pt;
+	right: 0;
+	height: 81pt;
+	background: linear-gradient(to bottom left, #fff, #9baac2);
+	background-position: 100% 0;
+	background-size: 51% 81pt;
+}
+
+body.bs-blue .bs-hl {
+	position: absolute;
+	left: 0;
+	right: 750pt;
+	height: 81pt;
+	background: linear-gradient(to bottom right, #fff, #9baac2);
+	background-size: 51% 81pt;
+}
+
+body.bs-blue #bs-main {
+	background:
+		linear-gradient(to bottom right, #f0f3f7, #fff 50%),
+		linear-gradient(to bottom left, #f0f3f7, #fff 50%),
+		linear-gradient(to top right, #f5f8fc, #fff 50%),
+		linear-gradient(to top left, #f5f8fc, #fff 50%);
+	background-size: 18pt 180pt, 18pt 180pt, 18pt 180pt, 18pt 180pt;
+	background-position: 0 0, 100% 0, 0 100%, 100% 100%;
+	background-repeat: no-repeat, no-repeat;
+}
+
+body.bs-blue > header {
+	height: 81pt;
+	background: linear-gradient(#b7d3df, #8294b2);
+}
+
+body.bs-blue > footer {
+	box-sizing: border-box;
+	clear: left;
+	padding: 4.5pt 12pt;
+	width: 100%;
+	background: linear-gradient(#f0f0f0, #e8e8e8);
+}
+
+body.bs-blue .bs-fr {
+	position: absolute;
+	margin-top: -24pt;
+	z-index: -1;
+	left: 750pt;
+	right: 0;
+	height: 24pt;
+	background: linear-gradient(to bottom left, #fff, #f0f0f0);
+	background-position: 100% 0;
+	background-size: 51% 24pt;
+}
+
+body.bs-blue .bs-fl {
+	z-index: -1;
+	position: absolute;
+	margin-top: -24pt;
+	left: 0;
+	right: 750pt;
+	height: 24pt;
+	background: linear-gradient(to bottom right, #fff, #f0f0f0);
+	background-size: 51% 24pt;
 }
