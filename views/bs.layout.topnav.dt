@@ -1,0 +1,16 @@
+extends bs.layout
+
+block body
+	.bs-hl
+	.bs-hr
+	header.bs-topnav>
+		block bs.header
+		nav
+			block bs.nav
+	#bs-main
+		section
+			block bs.content
+	footer
+		block bs.footer
+	.bs-fl
+	.bs-fr
