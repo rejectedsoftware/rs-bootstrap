@@ -25,6 +25,8 @@ function updateNavPosition()
 	var y = nav.style.position == "fixed" ? symin + nav.offsetTop : nav.offsetTop + miny;
 	var h = nav.offsetHeight;
 
+	highlightNavSection(symin);
+
 	//console.log(y + " " + h + " " + symin + " "+ symax);
 
 	if (symin <= miny || h >= navScrollInfo.main.offsetHeight) { // don't overlap header
@@ -56,6 +58,41 @@ function updateNavPosition()
 	}
 
 	navScrollInfo.lastScroll = symin;
+}
+
+function highlightNavSection(posy)
+{
+	posy = posy + 1;
+	var nav = document.getElementById("document-nav");
+	var links = nav.getElementsByTagName("a");
+	var link = null;
+	for (i in links) {
+		if (links[i].href == undefined) continue;
+		var ididx = links[i].href.indexOf("#");
+		var id = ididx >= 0 ? links[i].href.substr(ididx+1) : "";
+		if (id == "") continue;
+		var sect = document.getElementById(id);
+		if (sect == null) continue;
+		if (link === null) link = links[i];
+		var pos = sect.offsetTop + navScrollInfo.header.offsetHeight;
+		if (pos > posy) {
+			if (i > 0) link = links[i-1]
+			break;
+		}
+	}
+
+	if (link === null) return;
+	
+	var navitem = link.parentElement;
+	
+	var marked_links = nav.getElementsByClassName("active");
+	for (i = 0; i < marked_links.length; i++) {
+		ml = marked_links[i];
+		if (ml != navitem)
+			ml.className = ml.className.replace(/\bactive\b/,'');
+	}
+	if (navitem.className.indexOf("active") < 0)
+		navitem.className = navitem.className + " active";
 }
 
 window.onscroll = updateNavPosition;
