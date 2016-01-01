@@ -27,7 +27,7 @@
 /* Base font selection */
 body {
 	font-family: "Open Sans", sans-serif;
-	font-size: 9pt;
+	font-size: 10pt;
 	line-height: 15pt;
 }
 
@@ -85,6 +85,11 @@ body > header, body > footer, #bs-main {
 	list-style: none;
 }
 
+#bs-main nav ul ul {
+	padding-left: 12pt;
+	margin-bottom: 6pt;
+}
+
 #bs-main nav ul.bs-global {
 	margin-bottom: 9pt;
 }
@@ -94,7 +99,7 @@ body > header, body > footer, #bs-main {
 	padding-left: 24pt;
 }
 
-#bs-main nav ul.bs-local {
+#bs-main nav ul.bs-local, #bs-main nav.bs-local ul {
 	list-style-image: url(../images/bullet.svg);
 	/*list-style: none;*/
 	padding-left: 9pt;
@@ -106,12 +111,15 @@ body > header, body > footer, #bs-main {
 	padding-top: 9pt;
 }
 
-#bs-main nav ul.bs-local ul {
+#bs-main nav ul.bs-local ul, #bs-main nav.bs-local ul ul {
 	list-style: none;
 	padding-left: 0;
+	background: none;
+	padding: 0;
+	margin: 0;
 }
 
-#bs-main nav ul.bs-local li.active {
+#bs-main nav ul.bs-local li.active > a, #bs-main nav.bs-local ul li.active > a {
 	font-weight: bold;
 }
 
@@ -164,6 +172,12 @@ header nav.bs-topnav ul.bs-global {
 	background-size: 100% 34pt, 100% 18pt, 18pt 34pt;
 	background-position: 0 0, -18pt 34pt, 100% 0;
 	background-clip: content-box, border-box, border-box;
+}
+
+pre {
+	tab-size: 4;
+	-moz-tab-size: 4;
+    -o-tab-size:  4;
 }
 
 code pre, pre.code {
@@ -222,6 +236,11 @@ code a:hover, pre.code a:hover {
 }
 
 .bs-separator > h2:first-child { margin-top: 0; }
+
+nav .bs-separator {
+	margin-top: 9pt;
+	padding-top: 9pt;
+}
 
 td {
 	vertical-align: top;
