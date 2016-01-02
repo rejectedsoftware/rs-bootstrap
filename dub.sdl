@@ -1,5 +1,5 @@
-name "bootstrap"
-description "Provides a default style for rejectedsoftware web sites"
+name "rs-bootstrap"
+description "Provides a default layout/style for web sites based on vibe.d"
 dependency "vibe-d" version="~>0.7.25"
 targetType "sourceLibrary"
 copyFiles "public"
