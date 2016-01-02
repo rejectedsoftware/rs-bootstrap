@@ -1,5 +1,7 @@
 name "rs-bootstrap"
 description "Provides a default layout/style for web sites based on vibe.d"
+copyright "Copyright (C) 2015-2016, rejectedsoftware e.K."
+license "AGPL-3.0"
 dependency "vibe-d" version="~>0.7.25"
 targetType "sourceLibrary"
 copyFiles "public"
