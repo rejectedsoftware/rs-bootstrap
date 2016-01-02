@@ -24,12 +24,13 @@ function updateNavPosition()
 	var maxy = navScrollInfo.footer.offsetTop;
 	var y = nav.style.position == "fixed" ? symin + nav.offsetTop : nav.offsetTop + miny;
 	var h = nav.offsetHeight;
+	var fixed = window.matchMedia("(max-width: 600px)").matches;
 
 	highlightNavSection(symin);
 
 	//console.log(y + " " + h + " " + symin + " "+ symax);
 
-	if (symin <= miny || h >= navScrollInfo.main.offsetHeight) { // don't overlap header
+	if (symin <= miny || h >= navScrollInfo.main.offsetHeight || fixed) { // don't overlap header
 		nav.style.top = 0;
 		nav.style.bottom = "";
 		nav.style.position = "relative";
