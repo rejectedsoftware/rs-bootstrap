@@ -8,6 +8,7 @@ block defs
 
 html
 	head
+		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel="stylesheet", href="#{req.rootDir}styles/normalize.css")
 		link(rel="stylesheet", href="#{req.rootDir}styles/bootstrap.css")
 		script(src="#{req.rootDir}scripts/bootstrap.js")
