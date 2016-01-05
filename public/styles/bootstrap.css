@@ -51,7 +51,7 @@ a:hover { color: #dd9400; }
 
 body > header, body > footer, #bs-main {
 	position: relative;
-	max-width: 750pt;
+	max-width: 850pt;
 	margin: 0 auto;
 }
 
@@ -103,11 +103,14 @@ body > header, body > footer, #bs-main {
 	list-style-image: url(../images/bullet.svg);
 	/*list-style: none;*/
 	padding-left: 9pt;
-	margin-top: 9pt;
+}
+
+#bs-main nav.bs-local {
 	background: linear-gradient(to bottom left, #f6f6f6, #fff 50%), linear-gradient(to bottom right, #f6f6f6, #fff 50%);
 	background-size: 50% 18pt, 50% 18pt;
 	background-position: 0 0, 100% 0;
 	background-repeat: no-repeat;
+	margin-top: 9pt;
 	padding-top: 9pt;
 }
 
@@ -117,6 +120,10 @@ body > header, body > footer, #bs-main {
 	background: none;
 	padding: 0;
 	margin: 0;
+}
+
+#bs-main nav ul.bs-local ul ul, #bs-main nav.bs-local ul ul ul {
+	padding-left: 9pt;
 }
 
 #bs-main nav ul.bs-local li.active > a, #bs-main nav.bs-local ul li.active > a {
@@ -240,6 +247,10 @@ code a:hover, pre.code a:hover {
 nav .bs-separator {
 	margin-top: 9pt;
 	padding-top: 9pt;
+}
+
+th {
+	text-align: left;
 }
 
 td {
