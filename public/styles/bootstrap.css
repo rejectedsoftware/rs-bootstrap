@@ -35,7 +35,7 @@ pre, code, code pre + .caption, pre.code + .caption {
 	font-family: "Source Code Pro", monospace;
 }
 
-h1, h2, h3, h4 { font-family: "Open Sans Light", sans-serif; font-weight: lighter; }
+h1, h2, h3, h4 { font-family: "Open Sans", sans-serif; font-weight: lighter; }
 
 h1 { font-size: 24pt; line-height: 24pt; }
 h2 { font-size: 18pt; line-height: 18pt; margin: 18pt 0 12pt 0; }
