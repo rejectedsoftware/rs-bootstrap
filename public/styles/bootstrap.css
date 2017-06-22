@@ -270,6 +270,23 @@ textarea {
 
 /* vibed.org color scheme */
 
+body.bs-blue {
+	color: #ddd;
+	background-color: #222;
+}
+
+body.bs-blue a { color: white; }
+
+body.bs-blue .bs-separator {
+	/*background: linear-gradient(to bottom left, #1f1e1c, #222 50%), linear-gradient(to bottom right, #1f1e1c, #222 50%);*/
+	background: linear-gradient(to top left, #262524, #222 50%), linear-gradient(to top right, #262524, #222 50%);
+	background-size: 50% 18pt, 50% 18pt;
+	background-position: 0 0, 100% 0;
+	background-repeat: no-repeat;
+	padding-top: 36pt;
+	margin-top: 0;
+}
+
 body.bs-blue .bs-hr {
 	position: absolute;
 	left: 750pt;
@@ -291,10 +308,10 @@ body.bs-blue .bs-hl {
 
 body.bs-blue #bs-main {
 	background:
-		linear-gradient(to bottom right, #f0f3f7, #fff 50%),
-		linear-gradient(to bottom left, #f0f3f7, #fff 50%),
-		linear-gradient(to top right, #f5f8fc, #fff 50%),
-		linear-gradient(to top left, #f5f8fc, #fff 50%);
+		linear-gradient(to bottom right, #1f1e1c, #222 50%),
+		linear-gradient(to bottom left, #1f1e1c, #222 50%),
+		linear-gradient(to top right, #1f1e1c, #222 50%),
+		linear-gradient(to top left, #1f1e1c, #222 50%);
 	background-size: 18pt 180pt, 18pt 180pt, 18pt 180pt, 18pt 180pt;
 	background-position: 0 0, 100% 0, 0 100%, 100% 100%;
 	background-repeat: no-repeat, no-repeat;
@@ -320,7 +337,7 @@ body.bs-blue .bs-fr {
 	left: 750pt;
 	right: 0;
 	height: 24pt;
-	background: linear-gradient(to bottom left, #fff, #f0f0f0);
+	background: linear-gradient(to bottom left, #222, #f0f0f0);
 	background-position: 100% 0;
 	background-size: 51% 24pt;
 }
@@ -332,8 +349,37 @@ body.bs-blue .bs-fl {
 	left: 0;
 	right: 750pt;
 	height: 24pt;
-	background: linear-gradient(to bottom right, #fff, #f0f0f0);
+	background: linear-gradient(to bottom right, #222, #f0f0f0);
 	background-size: 51% 24pt;
+}
+
+body.bs-blue code pre, body.bs-blue pre.code {
+	padding: 6pt 24pt 6pt 24pt;
+	margin: 12pt -18pt 12pt -18pt;
+	background-color: #1f1f1f;
+	color: white;
+	background:
+		linear-gradient(to left, #1A1A1A, #1C1C1C 10%, #1E1E1E 20%, #202020 40%, #222),
+		linear-gradient(to right, #1A1A1A, #1C1C1C 10%, #1E1E1E 20%, #202020 40%, #222),
+		linear-gradient(#1d1d1d, #1d1d1d);
+	background-size: 18pt 100%, 18pt 100%, 100% 100%;
+	background-position: 0 0, 100% 0, 18pt 0;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	border-top: 1px solid #282828;
+	border-bottom: 1px solid #282828;
+}
+
+body.bs-blue code pre + .caption, body.bs-blue pre.code + .caption {
+	padding: 0 24pt 0 24pt;
+	margin: -12pt -18pt 12pt -18pt;
+	background:
+		linear-gradient(to left, #1A1A1A, #1C1C1C 10%, #1E1E1E 20%, #202020 40%, #222),
+		linear-gradient(to right, #1A1A1A, #1C1C1C 10%, #1E1E1E 20%, #202020 40%, #222),
+		linear-gradient(#181818, #181818);
+	background-size: 18pt 100%, 18pt 100%, 100% 100%;
+	background-position: 0 0, 100% 0, 18pt 0;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	border-bottom: 1px solid #282828;
 }
 
 @media screen and (max-width: 600px) {
