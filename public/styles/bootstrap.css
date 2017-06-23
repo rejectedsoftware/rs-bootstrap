@@ -165,7 +165,7 @@ header nav.bs-topnav ul.bs-global {
 		linear-gradient(to left, rgba(171,26,26,0.5), rgba(171,26,26,0.4) 5%, rgba(171,26,26,0.3) 10%, rgba(171,26,26,0.2) 20%, rgba(171,26,26,0.1) 40%, rgba(171,26,26,0));
 	padding-left: 18pt;
 	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-size: 100% 34pt, 100% 18pt, 18pt 34pt;
+	background-size: 100% 34pt, 100% 18pt, 18.5pt 34pt;
 	background-position: 0 0, 18pt 34pt, 0 0;
 	background-clip: content-box, border-box, border-box;
 }
@@ -176,7 +176,7 @@ header nav.bs-topnav ul.bs-global {
 		linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.4) 5%, rgba(0,0,0,0.3) 10%, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0));
 	padding-right: 18pt;
 	background-repeat: no-repeat, no-repeat;
-	background-size: 100% 34pt, 100% 18pt, 18pt 34pt;
+	background-size: 100% 34pt, 100% 18pt, 18.5pt 34pt;
 	background-position: 0 0, -18pt 34pt, 100% 0;
 	background-clip: content-box, border-box, border-box;
 }
@@ -196,7 +196,7 @@ code pre, pre.code {
 		linear-gradient(to left, #C0C0C0, #D0D0D0 10%, #E0E0E0 20%, #F0F0F0 40%, #FFF),
 		linear-gradient(to right, #C0C0C0, #D0D0D0 10%, #E0E0E0 20%, #F0F0F0 40%, #FFF),
 		linear-gradient(#1f1f1f, #1f1f1f);
-	background-size: 18pt 100%, 18pt 100%, 100% 100%;
+	background-size: 18.5pt 100%, 18.5pt 100%, 100% 100%;
 	background-position: 0 0, 100% 0, 18pt 0;
 	background-repeat: no-repeat, no-repeat, no-repeat;
 }
@@ -208,7 +208,7 @@ code pre + .caption, pre.code + .caption {
 		linear-gradient(to left, #f4efe7, #f7f3eb 10%, #faf7ef 20%, #fdfbf4 40%, #FFF),
 		linear-gradient(to right, #f4efe7, #f7f3eb 10%, #faf7ef 20%, #fdfbf4 40%, #FFF),
 		linear-gradient(#f2ecda, #f2ecda);
-	background-size: 18pt 100%, 18pt 100%, 100% 100%;
+	background-size: 18.5pt 100%, 18.5pt 100%, 100% 100%;
 	background-position: 0 0, 100% 0, 18pt 0;
 	background-repeat: no-repeat, no-repeat, no-repeat;
 }
